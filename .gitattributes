@@ -1,0 +1,5 @@
+# Video chunks share the .ts extension with TypeScript; never treat them as text
+*.ts binary
+*.jpg binary
+*.png binary
+*.pdf binary
