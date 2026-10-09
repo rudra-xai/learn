@@ -1,0 +1,283 @@
+WEBVTT
+
+00:00.600 --> 00:01.819
+Module 5.
+
+00:02.169 --> 00:04.793
+The verification protocol and the review record.
+
+00:05.143 --> 00:08.579
+Verification is the most important control in this programme.
+
+00:08.929 --> 00:12.428
+This module sets out what to check, how to check it, how
+
+00:12.428 --> 00:15.927
+deep the review must go for different kinds of work, and how
+
+00:15.927 --> 00:19.135
+to record the review so that it can be proved later.
+
+00:20.885 --> 00:24.790
+By the end of this module you will be able to:
+
+00:24.790 --> 00:28.696
+apply the five verification checks to any AI output; choose the
+
+00:28.696 --> 00:32.601
+right review tier for the task; spot the red flags of
+
+00:32.601 --> 00:36.152
+fabricated authority; create a contemporaneous review record and control versions.
+
+00:37.902 --> 00:40.273
+This is the most important module in the
+
+00:40.273 --> 00:42.348
+programme, and it rests on one rule.
+
+00:42.698 --> 00:44.997
+Verify against the primary source.
+
+00:45.347 --> 00:47.936
+Never ask the AI to verify itself.
+
+00:48.286 --> 00:51.092
+When you ask a chatbot whether the case it just
+
+00:51.092 --> 00:53.899
+gave you is real, it may simply confirm it, because
+
+00:53.899 --> 00:56.425
+it is running the same pattern-matching a second time.
+
+00:56.775 --> 01:00.124
+Verification means a human opening the actual source in
+
+01:00.124 --> 01:03.474
+an authoritative database or official record and reading it.
+
+01:05.223 --> 01:09.194
+Every AI output that will be relied on gets five checks.
+
+01:09.544 --> 01:16.173
+One, existence: every case, statute, rule and regulation is found in an authoritative source.
+
+01:16.523 --> 01:20.920
+Two, accuracy: every quotation matches the source word for word, and
+
+01:20.920 --> 01:24.917
+every pinpoint citation points to the right page or paragraph.
+
+01:25.267 --> 01:29.900
+Three, proposition: the source actually supports the point it is cited for.
+
+01:30.250 --> 01:33.036
+This is the check that catches content errors.
+
+01:33.386 --> 01:36.709
+Four, currency: the authority is still good law, so run
+
+01:36.709 --> 01:40.032
+it through a citator, confirm the statute is the current
+
+01:40.032 --> 01:43.022
+version and confirm it is from the right jurisdiction.
+
+01:43.372 --> 01:48.842
+And five, facts and figures: every date, deadline, number and factual statement
+
+01:48.842 --> 01:53.856
+is checked against the client record, and calculations are redone independently.
+
+01:55.606 --> 02:00.331
+Not every output needs the same depth of review, so we use three tiers.
+
+02:00.681 --> 02:04.536
+Tier one is internal working material: notes, brainstorming and
+
+02:04.536 --> 02:08.390
+internal summaries that nobody outside the firm relies on.
+
+02:08.740 --> 02:11.457
+The author checks before anything is reused.
+
+02:11.807 --> 02:15.760
+Tier two is client-facing advice: advice, letters, contract drafts
+
+02:15.760 --> 02:19.713
+and anything a client or counterparty will rely on.
+
+02:20.063 --> 02:22.992
+That requires the full five checks by the
+
+02:22.992 --> 02:25.555
+author, plus sign-off by a supervising lawyer.
+
+02:25.905 --> 02:29.063
+Tier three covers filings with a court, tribunal
+
+02:29.063 --> 02:32.221
+or regulator, and formal opinions or closing letters.
+
+02:32.571 --> 02:36.214
+That requires the full five checks, a documented cite-check, personal
+
+02:36.214 --> 02:39.857
+confirmation of the review by the lawyer who signs, and
+
+02:39.857 --> 02:43.136
+disclosure of AI use where the forum requires it.
+
+02:44.886 --> 02:47.777
+Learn the red flags of fabricated authority.
+
+02:48.127 --> 02:51.929
+Be suspicious of anything too perfect: a case that fits your
+
+02:51.929 --> 02:55.731
+argument exactly, with a quotation that reads like your own brief.
+
+02:56.081 --> 03:00.087
+Be suspicious of anything you can't find: the case is not in
+
+03:00.087 --> 03:04.092
+your research database, or the citation leads to a completely different case.
+
+03:04.442 --> 03:08.442
+Watch for odd details: reporter volumes or page numbers that don't fit
+
+03:08.442 --> 03:12.441
+the year, courts that don't exist, or party names that don't match.
+
+03:12.791 --> 03:15.969
+And watch for a holding with no pinpoint, or a
+
+03:15.969 --> 03:18.828
+quotation that you cannot locate anywhere in the opinion.
+
+03:19.178 --> 03:23.509
+Any one of these means stop and investigate before the document goes anywhere.
+
+03:25.259 --> 03:26.722
+Now the review record.
+
+03:27.072 --> 03:29.591
+If it isn't recorded, it didn't happen.
+
+03:29.941 --> 03:32.977
+When something goes wrong, the firm will need to show that
+
+03:32.977 --> 03:36.013
+a proper review took place before the work was relied on.
+
+03:36.363 --> 03:39.068
+A memory of having checked is not evidence.
+
+03:39.418 --> 03:43.651
+So for every tier two and tier three output, record the matter
+
+03:43.651 --> 03:47.883
+and the document, the exact version reviewed, the AI tool used and
+
+03:47.883 --> 03:52.116
+whether it was an enterprise or consumer plan, who reviewed it and
+
+03:52.116 --> 03:56.349
+in what role, the date and time preferably as a system timestamp
+
+03:56.349 --> 04:00.581
+or sign-off in your matter or document-management system, which checks were performed
+
+04:00.581 --> 04:04.461
+and against which sources, and what issues were found and fixed.
+
+04:04.811 --> 04:06.436
+Make the record at the time.
+
+04:06.786 --> 04:08.934
+A record reconstructed after a complaint is worth
+
+04:08.934 --> 04:11.082
+far less than one made in the moment.
+
+04:12.832 --> 04:14.771
+Finally, version control.
+
+04:15.121 --> 04:18.343
+First, save the raw AI output exactly as
+
+04:18.343 --> 04:21.564
+generated, together with the prompt and response log.
+
+04:21.914 --> 04:26.512
+Second, review a fixed version, and record which version number you checked.
+
+04:26.862 --> 04:30.829
+Third, re-review every later edit: any change made after the review, by
+
+04:30.829 --> 04:34.466
+anyone, gets its own check before the work is relied on.
+
+04:34.816 --> 04:38.331
+And fourth, treat re-use as new work: reusing an output
+
+04:38.331 --> 04:41.846
+on another matter, for a different client, or after the
+
+04:41.846 --> 04:45.010
+facts or law have changed, requires a fresh review.
+
+04:45.360 --> 04:48.299
+These four habits are what allow a firm to prove
+
+04:48.299 --> 04:50.944
+later exactly what was checked, by whom, and when.
+
+04:52.694 --> 04:54.273
+Let's recap the key points.
+
+04:54.623 --> 04:59.337
+Verify against primary sources; never ask the AI to check itself.
+
+04:59.687 --> 05:05.631
+Five checks: existence, accuracy, proposition, currency, facts and figures.
+
+05:05.981 --> 05:10.161
+Match review depth to the tier; filings get a documented cite-check.
+
+05:10.511 --> 05:13.854
+Record the review at the time and re-review any later edit.
+
+05:15.604 --> 05:16.707
+Knowledge check.
+
+05:17.057 --> 05:19.768
+You ask the same AI tool, 'Is the
+
+05:19.768 --> 05:22.479
+case you cited real?' and it replies 'Yes'.
+
+05:22.829 --> 05:24.269
+What have you verified?
+
+05:24.619 --> 05:26.709
+Option A: The case exists.
+
+05:27.059 --> 05:31.343
+Option B: Nothing: the AI cannot verify itself.
+
+05:31.693 --> 05:35.930
+Option C: The case exists, but not that it is good law.
+
+05:36.280 --> 05:39.078
+Take a moment to decide before the answer appears.
+
+05:44.828 --> 05:46.512
+The answer is option B.
+
+05:46.862 --> 05:50.263
+Self-verification is the same pattern-matching run twice.
+
+05:50.613 --> 05:52.796
+Only a primary source check counts.

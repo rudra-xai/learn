@@ -1,0 +1,187 @@
+WEBVTT
+
+00:00.600 --> 00:01.610
+Module 9.
+
+00:01.960 --> 00:04.665
+When it goes wrong: incident response.
+
+00:05.015 --> 00:07.662
+Errors will happen even in well-run firms.
+
+00:08.012 --> 00:10.955
+This module sets out the steps to take when an
+
+00:10.955 --> 00:13.898
+AI error is discovered, with the lesson from Mata v.
+
+00:14.248 --> 00:18.231
+Avianca about what happens when lawyers do not correct course.
+
+00:19.981 --> 00:23.844
+By the end of this module you will be able
+
+00:23.844 --> 00:27.707
+to: follow the six-step incident response; meet duties of candor
+
+00:27.707 --> 00:31.184
+and client communication; notify insurers and vendors on time.
+
+00:32.934 --> 00:35.918
+Start with the lesson from Mata versus Avianca.
+
+00:36.268 --> 00:38.230
+The fake citations were bad.
+
+00:38.580 --> 00:41.671
+But according to the court, what made it worse was
+
+00:41.671 --> 00:44.761
+that the lawyers continued to stand by the fake opinions
+
+00:44.761 --> 00:47.543
+after judicial orders had called their existence into question.
+
+00:47.893 --> 00:52.533
+Courts and regulators repeatedly distinguish between lawyers who make an error and
+
+00:52.533 --> 00:56.786
+correct it promptly, and lawyers who deny, delay or double down.
+
+00:57.136 --> 00:59.613
+Speed and candor are the most powerful tools
+
+00:59.613 --> 01:01.780
+you have once an error is discovered.
+
+01:03.530 --> 01:05.550
+Here is the six-step response.
+
+01:05.900 --> 01:09.539
+One, stop and contain: halt further use of the
+
+01:09.539 --> 01:12.773
+output and pull any pending filings or communications.
+
+01:13.123 --> 01:17.265
+Two, report internally to the AI Governance Lead, within two business
+
+01:17.265 --> 01:21.030
+days at most, and immediately if a deadline is live.
+
+01:21.380 --> 01:24.985
+Three, preserve evidence: put logs, versions and review records on
+
+01:24.985 --> 01:28.589
+legal hold and ask the vendor to preserve its logs.
+
+01:28.939 --> 01:32.539
+Four, correct the record: inform the client and, where the
+
+01:32.539 --> 01:36.138
+rules require, the court or tribunal, and fix the error.
+
+01:36.488 --> 01:41.863
+Five, notify your professional liability insurer, or insurers, promptly.
+
+01:42.213 --> 01:46.027
+Most policies have strict notice requirements, and reporting a circumstance
+
+01:46.027 --> 01:49.841
+early can protect cover for a claim that comes later.
+
+01:50.191 --> 01:53.757
+And six, learn: log the incident, identify the
+
+01:53.757 --> 01:56.878
+root cause, and update training and controls.
+
+01:58.628 --> 02:00.997
+Two notifications are easily forgotten.
+
+02:01.346 --> 02:05.834
+The vendor: check the contract for any incident-notice deadline and give written notice within
+
+02:05.834 --> 02:10.321
+it, keeping a copy of the terms that were in force at the time.
+
+02:10.671 --> 02:15.026
+The insurer: report early, even if no claim has yet been made,
+
+02:15.026 --> 02:19.019
+including what happened, the tool involved and how you found out.
+
+02:19.369 --> 02:20.669
+And one important don't.
+
+02:21.019 --> 02:24.937
+Do not admit liability, offer a payment or agree a settlement
+
+02:24.937 --> 02:28.856
+without your insurer's consent, because doing so can jeopardise your cover.
+
+02:30.606 --> 02:35.679
+Every incident, and every near-miss, goes into the firm's AI incident log.
+
+02:36.029 --> 02:40.731
+Capture when and how it was discovered, the matter and the document version, the
+
+02:40.731 --> 02:45.432
+tool used, what the error was and whether anyone relied on it, the actions
+
+02:45.432 --> 02:49.462
+taken, the notifications made with dates, and the root cause and fix.
+
+02:49.812 --> 02:53.008
+Near-misses matter as much as incidents, because they show where
+
+02:53.008 --> 02:55.884
+the controls are weak before a client is harmed.
+
+02:57.634 --> 02:59.282
+Let's recap the key points.
+
+02:59.632 --> 03:02.628
+Correct fast and candidly; never double down.
+
+03:02.978 --> 03:05.973
+Report to the Governance Lead within two business days.
+
+03:06.323 --> 03:09.934
+Preserve evidence and notify insurers and vendors on time.
+
+03:10.284 --> 03:12.571
+Log near-misses as well as incidents.
+
+03:14.321 --> 03:15.343
+Knowledge check.
+
+03:15.693 --> 03:19.710
+The day after filing, you find that one cited case does not exist.
+
+03:20.060 --> 03:21.348
+What comes first?
+
+03:21.698 --> 03:25.193
+Option A: Wait to see if opposing counsel notices.
+
+03:25.543 --> 03:28.712
+Option B: Contain, report to the Governance Lead, and
+
+03:28.712 --> 03:31.882
+move promptly to correct the filing with the court.
+
+03:32.232 --> 03:36.516
+Option C: Quietly file an amended brief without telling anyone.
+
+03:36.866 --> 03:39.594
+Take a moment to decide before the answer appears.
+
+03:45.344 --> 03:46.993
+The answer is option B.
+
+03:47.343 --> 03:51.058
+Prompt, candid correction through the firm's process is required, and
+
+03:51.058 --> 03:54.773
+it is the best protection for client, lawyer and firm.

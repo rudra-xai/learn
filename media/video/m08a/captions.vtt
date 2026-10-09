@@ -1,0 +1,241 @@
+WEBVTT
+
+00:00.600 --> 00:01.773
+Module 8A.
+
+00:02.123 --> 00:05.466
+Firm governance: building the AI governance programme.
+
+00:05.816 --> 00:08.200
+This module is for firm leadership and the
+
+00:08.200 --> 00:10.286
+person accountable for AI at the firm.
+
+00:10.636 --> 00:15.550
+It sets out the components of a written AI governance programme that meets
+
+00:15.550 --> 00:20.087
+professional obligations and stands up to scrutiny from clients, courts and insurers.
+
+00:21.837 --> 00:26.264
+By the end of this module you will be able to: set
+
+00:26.264 --> 00:30.691
+up the AI Governance Lead role and accountability; write an AI Use
+
+00:30.691 --> 00:35.118
+Policy with an approved-tool register; run vendor due diligence for high-materiality tools;
+
+00:35.118 --> 00:38.439
+control agentic AI and attest that the programme operates.
+
+00:40.189 --> 00:43.463
+A credible AI governance programme has ten components.
+
+00:43.813 --> 00:48.735
+A named AI Governance Lead: a partner or senior lawyer with real authority.
+
+00:49.085 --> 00:54.171
+A written AI Use Policy setting out approved, restricted and prohibited uses.
+
+00:54.521 --> 00:57.580
+A tool register listing every AI tool, what it may
+
+00:57.580 --> 01:00.639
+be used for, and what data may go into it.
+
+01:00.989 --> 01:05.203
+A review protocol built on the tiers and five checks from module five.
+
+01:05.553 --> 01:09.176
+Logging and retention of prompts, outputs and versions.
+
+01:09.526 --> 01:12.266
+Training on joining and annually, with records.
+
+01:12.616 --> 01:15.112
+An approval gate for agentic AI.
+
+01:15.462 --> 01:16.913
+Vendor due diligence.
+
+01:17.263 --> 01:20.398
+A procedure for court rules and client disclosure.
+
+01:20.748 --> 01:22.466
+And an incident process.
+
+01:22.816 --> 01:24.871
+Let's look at the most important ones.
+
+01:26.621 --> 01:28.780
+Start with the AI Governance Lead.
+
+01:29.130 --> 01:32.160
+This should be a partner or senior lawyer, formally
+
+01:32.160 --> 01:34.854
+appointed by the managing partner or governing body.
+
+01:35.204 --> 01:39.639
+The role carries authority to approve tools, enforce the policy, receive incident reports
+
+01:39.639 --> 01:44.074
+and sign an annual attestation that the programme is in place and working.
+
+01:44.424 --> 01:48.174
+The Lead is usually supported by an AI champion in IT
+
+01:48.174 --> 01:51.924
+or knowledge management and, in larger firms, a small AI committee.
+
+01:52.274 --> 01:56.145
+The whole programme should be reviewed and re-approved at least once a
+
+01:56.145 --> 01:59.693
+year, and any change of Lead should be documented and communicated.
+
+02:01.443 --> 02:04.792
+The AI Use Policy should state which tools are
+
+02:04.792 --> 02:08.142
+approved, for which tasks, and which uses are prohibited.
+
+02:08.492 --> 02:11.916
+That includes using consumer-grade tools for client work
+
+02:11.916 --> 02:14.912
+unless the Governance Lead specifically approves it.
+
+02:15.262 --> 02:19.076
+The policy is backed by a tool register, with a row
+
+02:19.076 --> 02:22.890
+for every AI tool, including AI features embedded in existing software.
+
+02:23.240 --> 02:28.329
+Record the tool and vendor, the plan and its data terms, approved and
+
+02:28.329 --> 02:33.418
+prohibited tasks, the decision materiality, meaning how directly the output can shape client
+
+02:33.418 --> 02:38.507
+advice, whether logging is enabled and exportable, and who approved it and when.
+
+02:38.857 --> 02:41.727
+Every person who uses AI in client work should
+
+02:41.727 --> 02:44.279
+receive the policy and acknowledge it in writing.
+
+02:46.029 --> 02:51.404
+For every tool with high decision materiality, run vendor due diligence before approval.
+
+02:51.754 --> 02:57.629
+Read the terms on data use, retention, confidentiality, security and data location.
+
+02:57.979 --> 03:04.027
+Find the liability position: caps, exclusions, indemnities and any waiver of claims.
+
+03:04.377 --> 03:07.506
+Most vendor terms cap the vendor's liability sharply, which
+
+03:07.506 --> 03:10.287
+means the firm carries most of the risk.
+
+03:10.637 --> 03:14.039
+Note any claim-notice period, because some contracts require you to
+
+03:14.039 --> 03:17.440
+notify the vendor of an incident within a short window.
+
+03:17.790 --> 03:20.948
+And keep a dated copy of the terms that were in
+
+03:20.948 --> 03:24.106
+force when the tool was approved and used, because terms change.
+
+03:25.856 --> 03:28.085
+Three more controls complete the programme.
+
+03:28.435 --> 03:30.711
+First, the agentic approval gate.
+
+03:31.061 --> 03:35.730
+Configure any agent so that it cannot file, serve, send, sign, commit,
+
+03:35.730 --> 03:40.399
+disclose, withdraw or delete without prior approval by a reviewing lawyer, and
+
+03:40.399 --> 03:44.679
+name a person who can halt or reverse what it does.
+
+03:45.029 --> 03:46.504
+Second, monitoring.
+
+03:46.854 --> 03:51.599
+Track training completion, errors caught at review, near-misses, policy breaches and spot-audit
+
+03:51.599 --> 03:56.344
+results, and run a quarterly spot audit that re-checks a sample of
+
+03:56.344 --> 04:00.298
+AI-assisted work to confirm the reviews and records are real.
+
+04:00.648 --> 04:02.622
+Third, annual attestation.
+
+04:02.972 --> 04:07.488
+The Governance Lead confirms in writing that the programme is in place and operating.
+
+04:07.838 --> 04:12.575
+Clients, courts and insurers increasingly ask for exactly this evidence.
+
+04:14.325 --> 04:15.939
+Let's recap the key points.
+
+04:16.289 --> 04:18.866
+Appoint a Governance Lead with real authority.
+
+04:19.216 --> 04:23.872
+Approved-tool register plus written policy, acknowledged by every user.
+
+04:24.221 --> 04:28.598
+Vendor diligence for high-materiality tools; keep dated terms.
+
+04:28.948 --> 04:33.024
+Gate agentic AI; audit quarterly; attest annually.
+
+04:34.774 --> 04:35.760
+Knowledge check.
+
+04:36.110 --> 04:40.894
+An associate starts using a new AI feature inside the firm's document software.
+
+04:41.244 --> 04:42.579
+What should happen first?
+
+04:42.929 --> 04:46.969
+Option A: Nothing; it's part of software already approved.
+
+04:47.319 --> 04:50.204
+Option B: It is assessed and added to the
+
+04:50.204 --> 04:53.089
+tool register by the Governance Lead before client use.
+
+04:53.439 --> 04:57.630
+Option C: The associate tells IT after the matter closes.
+
+04:57.980 --> 05:00.860
+Take a moment to decide before the answer appears.
+
+05:06.610 --> 05:08.130
+The answer is option B.
+
+05:08.480 --> 05:10.965
+Embedded AI features are AI tools.
+
+05:11.315 --> 05:15.796
+They need assessment, approved tasks and data rules before client use.

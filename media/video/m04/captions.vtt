@@ -1,0 +1,259 @@
+WEBVTT
+
+00:00.600 --> 00:01.622
+Module 4.
+
+00:01.972 --> 00:03.992
+Prompting for accurate output.
+
+00:04.342 --> 00:07.418
+Good prompting does not replace verification, but it sharply
+
+00:07.418 --> 00:10.495
+reduces the number of errors you have to catch.
+
+00:10.845 --> 00:14.342
+This module gives you a repeatable prompt structure and
+
+00:14.342 --> 00:17.451
+techniques that steer AI toward grounded, honest answers.
+
+00:19.201 --> 00:23.303
+By the end of this module you will be able to:
+
+00:23.303 --> 00:27.404
+use the six-part prompt structure for legal tasks; ground the model
+
+00:27.404 --> 00:31.506
+in source material instead of its memory; avoid leading questions that
+
+00:31.506 --> 00:35.234
+invite invented support; use decomposition and self-critique to improve accuracy.
+
+00:36.984 --> 00:39.910
+Here is a repeatable structure for any legal prompt.
+
+00:40.260 --> 00:43.884
+One, role: tell the AI who it is acting as,
+
+00:43.884 --> 00:47.145
+for example an associate drafting for a supervising partner.
+
+00:47.495 --> 00:53.393
+Two, task: one clear deliverable, such as summarise, compare, draft or list.
+
+00:53.743 --> 00:57.620
+Three, jurisdiction and date: which law applies and as
+
+00:57.620 --> 01:01.498
+of when, because the model will otherwise blend jurisdictions.
+
+01:01.848 --> 01:06.678
+Four, sources: the documents it must rely on, pasted or attached.
+
+01:07.028 --> 01:11.005
+Five, constraints: tell it to use only the sources provided, to
+
+01:11.005 --> 01:14.621
+say when it is unsure, and never to invent citations.
+
+01:14.971 --> 01:19.400
+And six, output format: a table, a numbered list or a memo
+
+01:19.400 --> 01:23.829
+with pinpoint references to the source, which makes your verification much faster.
+
+01:25.579 --> 01:27.274
+Compare these two prompts.
+
+01:27.624 --> 01:30.547
+The weak prompt asks the AI to find
+
+01:30.547 --> 01:33.104
+cases that say a non-compete is unenforceable.
+
+01:33.454 --> 01:36.222
+It has no jurisdiction, no sources and no
+
+01:36.222 --> 01:38.644
+constraints, and it is a leading question.
+
+01:38.994 --> 01:42.523
+It practically invites the model to invent supportive authority.
+
+01:42.873 --> 01:46.828
+The strong prompt sets a role, gives one task, fixes
+
+01:46.828 --> 01:50.783
+the jurisdiction as Texas, supplies three actual decisions, and tells
+
+01:50.783 --> 01:54.739
+the model to use only those decisions with pinpoint references.
+
+01:55.088 --> 01:58.681
+It asks for points on both sides, tells the model to
+
+01:58.681 --> 02:02.273
+say 'not addressed' rather than guess, forbids citing anything not attached,
+
+02:02.273 --> 02:05.212
+and asks for a table that makes checking fast.
+
+02:05.562 --> 02:08.427
+The strong prompt takes thirty seconds longer to write
+
+02:08.427 --> 02:10.973
+and saves far more than that in verification.
+
+02:12.723 --> 02:16.101
+The single biggest improvement you can make is to ground the model.
+
+02:16.451 --> 02:18.390
+Do not ask it to remember the law.
+
+02:18.740 --> 02:19.785
+Give it the law.
+
+02:20.135 --> 02:25.301
+Paste or attach the statute, contract, transcript or decision you want analysed.
+
+02:25.651 --> 02:28.745
+Require a section, page or paragraph reference for every
+
+02:28.745 --> 02:31.839
+point, so each one can be checked in seconds.
+
+02:32.189 --> 02:34.221
+And separate finding from analysing.
+
+02:34.571 --> 02:39.029
+Use a grounded legal research product, or your usual research database, to
+
+02:39.029 --> 02:43.116
+find authority, then use AI to help analyse what you found.
+
+02:43.466 --> 02:46.564
+When a general chatbot is asked to find law from
+
+02:46.564 --> 02:49.352
+memory, it is working exactly where it is weakest.
+
+02:51.102 --> 02:53.633
+Six techniques reliably reduce errors.
+
+02:53.983 --> 02:58.009
+Ask for both sides, the strongest authority for and against your
+
+02:58.009 --> 03:01.669
+position, which counters the model's tendency to agree with you.
+
+03:02.019 --> 03:06.883
+Permit uncertainty explicitly: tell it that 'I don't know' is an acceptable answer.
+
+03:07.233 --> 03:10.507
+Break complex work into steps, one per prompt:
+
+03:10.507 --> 03:13.781
+facts, then issues, then analysis, then a draft.
+
+03:14.131 --> 03:17.771
+Add a self-critique pass, asking the model to list any statement
+
+03:17.771 --> 03:21.411
+in its answer that is not supported by the attached sources.
+
+03:21.761 --> 03:24.420
+Fix the date the law should be applied as of,
+
+03:24.420 --> 03:27.078
+and ask it to flag anything that may have changed.
+
+03:27.428 --> 03:31.480
+And ask for gaps: what information would it need to answer reliably?
+
+03:31.830 --> 03:32.817
+One caution.
+
+03:33.167 --> 03:37.405
+A self-critique pass helps you find problems, but it is never verification.
+
+03:37.755 --> 03:41.330
+Asking the AI whether its own answer is correct is not a check.
+
+03:41.680 --> 03:43.724
+Only a primary source is.
+
+03:45.474 --> 03:47.900
+Finally, match the tool to the task.
+
+03:48.250 --> 03:54.656
+AI is a strong fit for summarising documents you provide, first drafts, issue-spotting,
+
+03:54.656 --> 04:00.568
+comparing clauses, plain-language explanations for clients, and building chronologies from supplied records.
+
+04:00.918 --> 04:05.855
+Use it with care for contract review at scale, research memos built
+
+04:05.855 --> 04:10.380
+on authority you supplied, translation, and correspondence to the other side.
+
+04:10.730 --> 04:14.682
+And never let AI lead on finding authority from memory,
+
+04:14.682 --> 04:18.633
+final citations, deadline and limitation calculations, novel legal questions, or
+
+04:18.633 --> 04:22.190
+anything that will be filed without a full check.
+
+04:22.540 --> 04:25.628
+The better your prompt, the fewer errors you need to catch.
+
+04:25.978 --> 04:28.288
+But good prompting reduces errors.
+
+04:28.638 --> 04:30.960
+It never removes the need to verify.
+
+04:32.710 --> 04:34.370
+Let's recap the key points.
+
+04:34.720 --> 04:41.663
+Use the six parts: role, task, jurisdiction and date, sources, constraints, format.
+
+04:42.013 --> 04:45.891
+Ground the model in the documents; don't ask it to remember the law.
+
+04:46.241 --> 04:48.957
+Ask for both sides and permit 'I don't know'.
+
+04:49.307 --> 04:52.001
+A self-critique pass is not verification.
+
+04:53.751 --> 04:54.865
+Knowledge check.
+
+04:55.215 --> 04:58.722
+Which prompt is most likely to produce invented authority?
+
+04:59.072 --> 05:04.308
+Option A: 'Using only the attached opinion, list each holding with its page number.'.
+
+05:04.658 --> 05:09.720
+Option B: 'Find cases supporting my client's position that the contract is void.'.
+
+05:10.070 --> 05:15.143
+Option C: 'Summarise the attached contract's termination clauses in a table.'.
+
+05:15.493 --> 05:18.210
+Take a moment to decide before the answer appears.
+
+05:23.960 --> 05:25.446
+The answer is option B.
+
+05:25.796 --> 05:29.658
+A leading request to find supportive cases from memory, with
+
+05:29.658 --> 05:33.133
+no sources or constraints, is the classic hallucination trigger.

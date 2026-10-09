@@ -1,0 +1,199 @@
+WEBVTT
+
+00:00.600 --> 00:01.715
+Module 6.
+
+00:02.065 --> 00:04.352
+Confidentiality and data handling.
+
+00:04.702 --> 00:08.641
+This module sets out practical rules for protecting client confidentiality
+
+00:08.641 --> 00:12.580
+and privilege when using AI tools, including how to read
+
+00:12.580 --> 00:16.126
+vendor data terms and when client consent is required.
+
+00:17.876 --> 00:22.984
+By the end of this module you will be able to: classify information
+
+00:22.984 --> 00:28.093
+before it goes into any AI tool; distinguish enterprise and consumer data terms;
+
+00:28.093 --> 00:33.201
+apply anonymisation and minimisation techniques; know when to stop and get client consent.
+
+00:34.951 --> 00:38.141
+Before any client information goes into an AI tool, someone
+
+00:38.141 --> 00:41.011
+at the firm must know the tool's data terms.
+
+00:41.361 --> 00:43.080
+Ask six questions.
+
+00:43.430 --> 00:45.995
+Is this an enterprise or a consumer plan?
+
+00:46.345 --> 00:50.757
+Consumer plans often have weaker confidentiality and retention terms.
+
+00:51.107 --> 00:53.789
+Are inputs used to train the vendor's models?
+
+00:54.139 --> 00:57.390
+If so, client data could surface in later outputs.
+
+00:57.740 --> 01:00.097
+How long are inputs and outputs kept?
+
+01:00.447 --> 01:04.092
+Who at the vendor can access the data, including for human review?
+
+01:04.442 --> 01:07.290
+Where is data stored and processed, since some
+
+01:07.290 --> 01:09.783
+clients and some matters restrict data location?
+
+01:10.133 --> 01:12.616
+And can logs be exported, because you may
+
+01:12.616 --> 01:14.788
+need them to prove what happened later.
+
+01:16.538 --> 01:18.698
+Use simple traffic-light rules.
+
+01:19.048 --> 01:23.059
+Green is public or fully anonymised material: published law,
+
+01:23.059 --> 01:27.070
+public filings, and text with all identifying details removed.
+
+01:27.420 --> 01:29.731
+It can go into any approved tool.
+
+01:30.081 --> 01:35.653
+Amber is client confidential information: client facts, contracts and correspondence.
+
+01:36.003 --> 01:39.767
+It goes only into firm-approved enterprise tools with confirmed no-training
+
+01:39.767 --> 01:43.155
+terms, and only as much as the task needs.
+
+01:43.505 --> 01:48.525
+Red is material that never goes into an AI tool without specific approval:
+
+01:48.525 --> 01:53.546
+privileged strategy, health and financial records, sealed or protected material, data under a
+
+01:53.546 --> 01:58.180
+protective order, and anything a client has told you not to share.
+
+01:58.530 --> 02:02.228
+Red material needs approval from the firm's AI Governance
+
+02:02.228 --> 02:05.926
+Lead and, for self-learning tools, the client's informed consent.
+
+02:07.676 --> 02:10.090
+Two habits reduce risk dramatically.
+
+02:10.440 --> 02:12.333
+Minimise and anonymise.
+
+02:12.683 --> 02:16.982
+Replace identifiers with neutral labels such as Client A, Company B
+
+02:16.982 --> 02:20.891
+or the Property, instead of names, addresses and account numbers.
+
+02:21.241 --> 02:23.984
+Send only what the task needs: paste the
+
+02:23.984 --> 02:26.384
+relevant clause, not the whole data room.
+
+02:26.734 --> 02:28.464
+And check what you upload.
+
+02:28.814 --> 02:32.053
+Metadata, tracked changes and hidden comments travel with documents,
+
+02:32.053 --> 02:35.293
+and they can reveal more than the visible text.
+
+02:37.042 --> 02:38.401
+One insurance note.
+
+02:38.751 --> 02:43.430
+This training reduces both the chance and the size of a confidentiality incident.
+
+02:43.780 --> 02:47.696
+But data and privacy incidents, including those caused by putting
+
+02:47.696 --> 02:51.613
+client information into an AI tool, are often handled under
+
+02:51.613 --> 02:55.529
+cyber or privacy insurance rather than under professional liability insurance.
+
+02:55.879 --> 03:00.660
+Confirm with your broker which of your policies responds to an AI-related data
+
+03:00.660 --> 03:05.074
+incident, and make sure your incident process notifies the right insurer quickly.
+
+03:06.824 --> 03:08.519
+Let's recap the key points.
+
+03:08.869 --> 03:11.644
+Know each tool's data terms before use.
+
+03:11.994 --> 03:15.546
+Green, amber, red: classify before you paste.
+
+03:15.896 --> 03:18.195
+Minimise and anonymise by default.
+
+03:18.545 --> 03:22.806
+Self-learning tools plus confidential data means informed client consent.
+
+03:24.556 --> 03:25.647
+Knowledge check.
+
+03:25.997 --> 03:29.817
+An associate wants to paste a full merger agreement under a
+
+03:29.817 --> 03:33.637
+confidentiality agreement into a free consumer chatbot to get a summary.
+
+03:33.987 --> 03:35.833
+What is the right response?
+
+03:36.183 --> 03:39.364
+Option A: Fine if they delete the chat afterwards.
+
+03:39.714 --> 03:43.980
+Option B: Not permitted: this is amber or red data
+
+03:43.980 --> 03:48.247
+and needs an approved enterprise tool, minimisation and possibly consent.
+
+03:48.597 --> 03:52.301
+Option C: Fine if they remove the company names only.
+
+03:52.651 --> 03:55.333
+Take a moment to decide before the answer appears.
+
+04:01.082 --> 04:02.615
+The answer is option B.
+
+04:02.965 --> 04:05.949
+Consumer tools may retain or train on inputs.
+
+04:06.299 --> 04:12.765
+Confidential material goes only into approved tools, minimised, with approval and consent where required.

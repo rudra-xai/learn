@@ -1,0 +1,238 @@
+WEBVTT
+
+00:00.600 --> 00:01.761
+Module 3.
+
+00:02.111 --> 00:04.665
+Ethics, court rules and regulation.
+
+00:05.015 --> 00:10.665
+This module summarises the professional conduct framework for AI use in U.S.
+
+00:10.665 --> 00:16.316
+legal practice: ABA Formal Opinion 512, state guidance, court standing orders, continuing
+
+00:16.316 --> 00:21.966
+education developments and, for firms with EU exposure, the AI literacy duty.
+
+00:23.716 --> 00:28.135
+By the end of this module you will be able to:
+
+00:28.135 --> 00:32.554
+apply ABA Formal Opinion 512 to everyday AI use; know where
+
+00:32.554 --> 00:36.974
+to find state and court-specific requirements; understand informed consent and billing
+
+00:36.974 --> 00:40.991
+rules for AI; recognise when AI use must be disclosed.
+
+00:42.741 --> 00:49.614
+The central reference point is ABA Formal Opinion 512, issued on July 29, 2024.
+
+00:49.964 --> 00:53.459
+Its core message is that there are no special rules for AI.
+
+00:53.809 --> 00:57.745
+The existing Model Rules of Professional Conduct already apply.
+
+00:58.095 --> 01:03.878
+Competence, confidentiality, communication with clients, reasonable fees, candor toward the tribunal
+
+01:03.878 --> 01:09.136
+and supervision all apply when a lawyer uses generative AI.
+
+01:09.486 --> 01:11.332
+Let's take them one at a time.
+
+01:13.082 --> 01:18.440
+Under Rule 1.1, competence, you must have a reasonable understanding of the capabilities and
+
+01:18.440 --> 01:23.415
+limitations of the specific tool you use, and you must review its output.
+
+01:23.765 --> 01:29.483
+Under the confidentiality rules, 1.6, 1.9 c and 1.18 b, you must
+
+01:29.483 --> 01:35.200
+assess the risk of disclosure before putting client information into a tool.
+
+01:35.550 --> 01:40.200
+Under Rule 1.4, communication, you may need to tell clients about your
+
+01:40.200 --> 01:44.850
+AI use, particularly where it affects their matter or when they ask.
+
+01:45.200 --> 01:49.130
+Under Rule 1.5, fees, you bill for actual time, and you generally
+
+01:49.130 --> 01:53.060
+cannot charge a client for the time you spend learning a tool.
+
+01:53.410 --> 01:58.472
+Under the candor rules, 3.1, 3.3 and 8.4 c, you must not
+
+01:58.472 --> 02:03.534
+submit unverified AI output to a tribunal, and you must correct errors.
+
+02:03.884 --> 02:09.346
+And under Rules 5.1 and 5.3, managers must put AI policies in place, make
+
+02:09.346 --> 02:14.809
+sure lawyers and non-lawyers are trained, and vet the vendors the firm relies on.
+
+02:16.559 --> 02:20.344
+Two points in Opinion 512 tend to surprise lawyers.
+
+02:20.694 --> 02:22.702
+First, informed consent.
+
+02:23.052 --> 02:27.898
+Before a client's confidential information goes into a self-learning tool, one that may
+
+02:27.898 --> 02:32.743
+use the input to improve itself, the client must give informed consent, after
+
+02:32.743 --> 02:37.216
+you explain the risk that the information could surface in later outputs.
+
+02:37.566 --> 02:41.816
+The opinion says boilerplate language in an engagement letter is not enough.
+
+02:42.165 --> 02:43.268
+Second, billing.
+
+02:43.618 --> 02:46.277
+Hourly bills must reflect the actual time spent,
+
+02:46.277 --> 02:48.936
+not the time the task used to take.
+
+02:49.286 --> 02:51.880
+A flat fee may become unreasonable if AI
+
+02:51.880 --> 02:54.150
+lets you complete the work dramatically faster.
+
+02:54.500 --> 02:58.892
+And time spent learning a general AI tool is overhead, not billable
+
+02:58.892 --> 03:02.918
+time, unless the client specifically asked you to use that tool.
+
+03:04.668 --> 03:07.686
+Beyond the ABA, requirements vary by forum.
+
+03:08.036 --> 03:11.670
+Many state bars, including Florida and Texas, have issued their
+
+03:11.670 --> 03:15.304
+own AI ethics opinions, and they are not identical, so
+
+03:15.304 --> 03:18.938
+check the current text for every state where you practise.
+
+03:19.288 --> 03:22.939
+Some judges have standing orders requiring lawyers to disclose or
+
+03:22.939 --> 03:26.590
+certify their use of AI in filings, so check local
+
+03:26.590 --> 03:29.876
+rules and each judge's individual orders before you file.
+
+03:30.226 --> 03:32.548
+Continuing education is catching up too.
+
+03:32.898 --> 03:38.640
+New Jersey will require one technology credit every two years from January
+
+03:38.640 --> 03:43.904
+1, 2027, and its proposed definition of technology topics includes AI.
+
+03:44.254 --> 03:49.202
+And if your firm operates in the European Union, Article 4 of the
+
+03:49.202 --> 03:54.150
+EU AI Act has required organisations that deploy AI to ensure a sufficient
+
+03:54.150 --> 03:58.337
+level of AI literacy among their staff since February 2, 2025.
+
+04:00.087 --> 04:05.161
+Because the rules keep changing, every firm needs a simple regulatory watch routine.
+
+04:05.511 --> 04:08.843
+First, map your forums: list every state, court
+
+04:08.843 --> 04:12.175
+and agency where the firm files or advises.
+
+04:12.525 --> 04:16.194
+Second, assign an owner, one person responsible for
+
+04:16.194 --> 04:19.862
+tracking new opinions, standing orders and rule changes.
+
+04:20.212 --> 04:24.572
+Third, build a check into every filing: before anything is filed,
+
+04:24.572 --> 04:28.931
+confirm whether that judge or court requires AI disclosure or certification.
+
+04:29.281 --> 04:35.144
+And fourth, update quarterly, refreshing the firm's AI policy and training with anything new.
+
+04:35.494 --> 04:39.030
+This programme's quarterly update supports that routine, but
+
+04:39.030 --> 04:42.124
+responsibility for compliance stays with the firm.
+
+04:43.874 --> 04:45.487
+Let's recap the key points.
+
+04:45.837 --> 04:50.389
+Opinion 512: existing rules apply fully to AI use.
+
+04:50.739 --> 04:55.452
+Informed consent is needed before confidential data goes into self-learning tools.
+
+04:55.802 --> 04:58.821
+Bill actual time; learning a tool is overhead.
+
+04:59.171 --> 05:02.770
+Check state opinions and judges' standing orders for every forum.
+
+05:04.520 --> 05:05.681
+Knowledge check.
+
+05:06.031 --> 05:08.960
+A client's engagement letter contains a general line
+
+05:08.960 --> 05:11.522
+saying the firm 'may use technology tools'.
+
+05:11.872 --> 05:16.818
+Is that informed consent to put their confidential data into a self-learning AI tool?
+
+05:17.168 --> 05:19.966
+Option A: Yes, the client signed it.
+
+05:20.316 --> 05:26.342
+Option B: No, Opinion 512 says boilerplate is not enough for self-learning tools.
+
+05:26.692 --> 05:30.256
+Option C: Yes, if the tool is from a well-known vendor.
+
+05:30.606 --> 05:33.381
+Take a moment to decide before the answer appears.
+
+05:39.131 --> 05:40.663
+The answer is option B.
+
+05:41.013 --> 05:44.508
+Informed consent requires explaining the specific risk.
+
+05:44.858 --> 05:48.480
+Generic engagement-letter language does not meet that standard.

@@ -1,0 +1,280 @@
+WEBVTT
+
+00:00.600 --> 00:01.610
+Module 2.
+
+00:01.960 --> 00:04.804
+How AI fails you: the legal risk map.
+
+00:05.154 --> 00:08.751
+This module maps the specific ways AI use goes wrong in
+
+00:08.751 --> 00:12.347
+legal practice, with real examples, so that you can recognise each
+
+00:12.347 --> 00:15.290
+risk before it reaches a client or a court.
+
+00:17.040 --> 00:21.444
+By the end of this module you will be able to: name
+
+00:21.444 --> 00:25.847
+the main categories of AI failure in legal work; connect each failure
+
+00:25.847 --> 00:30.251
+to a realistic consequence for the firm; recognise automation bias in yourself
+
+00:30.251 --> 00:33.921
+and your team; understand why errors are increasing, not decreasing.
+
+00:35.671 --> 00:37.970
+Let's start with what is already happening.
+
+00:38.320 --> 00:42.417
+In Mata versus Avianca, in the Southern District of New York in
+
+00:42.417 --> 00:46.515
+June 2023, a judge imposed a five thousand dollar penalty after lawyers
+
+00:46.515 --> 00:49.930
+filed a brief citing six cases that did not exist.
+
+00:50.280 --> 00:54.084
+Their AI tool had invented them, and the lawyers made matters worse
+
+00:54.084 --> 00:57.571
+by standing by the fake cases after the court questioned them.
+
+00:57.921 --> 01:02.692
+In May 2026, the Georgia Supreme Court suspended a prosecutor for six months
+
+01:02.692 --> 01:07.464
+from practising before that court, after her briefs in a murder appeal relied
+
+01:07.464 --> 01:12.236
+on AI-generated authorities that were fabricated or did not say what was claimed.
+
+01:12.586 --> 01:18.840
+And by early June 2026, one widely used public database had tracked more than
+
+01:18.840 --> 01:24.648
+one thousand United States court decisions involving AI-fabricated or misused material in filings.
+
+01:24.998 --> 01:29.817
+Around four in ten of those involved lawyers, not self-represented litigants.
+
+01:30.167 --> 01:32.233
+These are not hypothetical risks.
+
+01:33.983 --> 01:36.375
+Here is the full risk map for legal work.
+
+01:36.725 --> 01:43.946
+Hallucinated authority is the headline risk: fake cases, invented quotations and wrong pinpoint citations.
+
+01:44.296 --> 01:47.663
+But content error is just as serious and harder to spot.
+
+01:48.013 --> 01:52.216
+The sources are real, but the conclusion is wrong: the law is misstated or
+
+01:52.216 --> 01:56.419
+superseded, the jurisdiction is wrong, or a key clause is missed in a review.
+
+01:56.769 --> 02:00.564
+Calculation and date errors, especially limitation periods and
+
+02:00.564 --> 02:03.885
+filing deadlines, are a classic malpractice trigger.
+
+02:04.235 --> 02:07.579
+Confidentiality and privilege risk arises when client data
+
+02:07.579 --> 02:10.923
+goes into a tool with weak data terms.
+
+02:11.273 --> 02:15.153
+Misstatement to third parties happens when an AI-drafted letter to opposing
+
+02:15.153 --> 02:18.680
+counsel states the law wrongly and someone relies on it.
+
+02:19.030 --> 02:24.185
+Defamation can occur when an AI summary attributes misconduct to a real person.
+
+02:24.535 --> 02:29.713
+IP infringement arises when generated content reproduces protected material.
+
+02:30.063 --> 02:33.946
+Prompt injection is newer: a document in a data room contains hidden
+
+02:33.946 --> 02:37.505
+instructions that tell the AI to leave out or change content.
+
+02:37.855 --> 02:42.313
+Vendor drift means a model update quietly changes the quality of output.
+
+02:42.663 --> 02:47.620
+Public-facing chatbots can give advice to the public before any engagement exists.
+
+02:47.970 --> 02:51.321
+And billing: charging for time the AI saved, or charging the
+
+02:51.321 --> 02:54.367
+client for the time you spent learning a new tool.
+
+02:56.117 --> 02:58.648
+It helps to separate two failure types.
+
+02:58.998 --> 03:01.831
+A hallucination is a source that does not exist.
+
+03:02.181 --> 03:05.316
+It is actually easy to catch, if you look it up.
+
+03:05.666 --> 03:09.351
+When it is missed, it is usually discovered by opposing counsel
+
+03:09.351 --> 03:12.702
+or the court, and the consequence is sanctions and discipline.
+
+03:13.052 --> 03:14.956
+A content error is subtler.
+
+03:15.306 --> 03:18.857
+The source exists, so a quick check seems to pass, but
+
+03:18.857 --> 03:22.408
+the case was overturned, or it is from another state, or
+
+03:22.408 --> 03:25.313
+it does not actually hold what the AI claims.
+
+03:25.663 --> 03:29.062
+Content errors are usually discovered by the client, after
+
+03:29.062 --> 03:32.084
+a loss, and they lead to malpractice claims.
+
+03:32.434 --> 03:35.423
+Your verification process has to catch both, which is
+
+03:35.423 --> 03:38.413
+why checking that a case exists is never enough.
+
+03:38.763 --> 03:41.816
+You must check that it says what you are using it for.
+
+03:43.566 --> 03:48.419
+Behind almost every AI failure is a human failure called automation bias.
+
+03:48.769 --> 03:53.088
+It is the tendency to trust a machine's output more than our
+
+03:53.088 --> 03:57.407
+own judgment, especially when that output is fluent, fast and well formatted.
+
+03:57.757 --> 04:01.377
+It bites hardest late at night, close to a deadline, with
+
+04:01.377 --> 04:04.996
+junior staff who may hesitate to question a polished draft, and
+
+04:04.996 --> 04:08.287
+whenever the output confirms what we were hoping to find.
+
+04:08.637 --> 04:11.586
+The counter to automation bias is not to try harder.
+
+04:11.936 --> 04:14.782
+It is a fixed checklist that you apply every
+
+04:14.782 --> 04:17.311
+time, regardless of how good the output looks.
+
+04:17.661 --> 04:20.517
+We build that checklist in modules five and seven.
+
+04:22.267 --> 04:24.601
+Four risks are regularly forgotten.
+
+04:24.951 --> 04:28.298
+Re-using output: an answer that was properly reviewed for one
+
+04:28.298 --> 04:31.645
+matter is reused for a different client, or months later
+
+04:31.645 --> 04:34.657
+after the law has changed, without a fresh review.
+
+04:35.007 --> 04:38.287
+Editing after review: someone changes the document after
+
+04:38.287 --> 04:41.567
+it was checked, and nobody checks the change.
+
+04:41.917 --> 04:46.537
+Hidden instructions: documents produced by the other side can contain text aimed at
+
+04:46.537 --> 04:51.158
+your AI tool, for example white text telling it to ignore a clause.
+
+04:51.508 --> 04:54.416
+And silent updates: the same tool can behave
+
+04:54.416 --> 04:57.325
+differently after the vendor updates the underlying model.
+
+04:57.675 --> 05:01.761
+Each of these is a process failure, and each one has a process fix.
+
+05:03.511 --> 05:05.241
+Let's recap the key points.
+
+05:05.591 --> 05:10.375
+Errors in AI-assisted filings are rising, and lawyers are sanctioned for them.
+
+05:10.724 --> 05:15.125
+Checking that a source exists is not enough; check it says what you claim.
+
+05:15.475 --> 05:19.643
+Automation bias is beaten by a fixed checklist, not by effort.
+
+05:19.993 --> 05:26.018
+Re-use, post-review edits, hidden instructions and vendor updates all need process controls.
+
+05:27.768 --> 05:28.871
+Knowledge check.
+
+05:29.221 --> 05:32.042
+Your AI tool cites a real appellate case.
+
+05:32.392 --> 05:33.844
+You confirm it exists.
+
+05:34.194 --> 05:35.563
+Is your check complete?
+
+05:35.913 --> 05:39.153
+Option A: Yes, existence is what matters.
+
+05:39.503 --> 05:42.591
+Option B: No, you must also confirm it says what
+
+05:42.591 --> 05:45.679
+you rely on it for and is still good law.
+
+05:46.029 --> 05:49.907
+Option C: Only if the tool is a legal research product.
+
+05:50.257 --> 05:53.020
+Take a moment to decide before the answer appears.
+
+05:58.770 --> 06:00.302
+The answer is option B.
+
+06:00.652 --> 06:03.195
+Content errors use real sources wrongly.
+
+06:03.545 --> 06:08.294
+Confirm the holding, the quotation, the jurisdiction and current validity.

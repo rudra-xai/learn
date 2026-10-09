@@ -1,0 +1,307 @@
+WEBVTT
+
+00:00.600 --> 00:01.645
+Module 1.
+
+00:01.995 --> 00:04.410
+How generative AI actually works.
+
+00:04.760 --> 00:10.158
+This module explains, without jargon, what a large language model does when it answers
+
+00:10.158 --> 00:15.557
+a legal question, and why that design produces both its strengths and its failures.
+
+00:17.307 --> 00:22.990
+By the end of this module you will be able to: explain in
+
+00:22.990 --> 00:28.673
+plain words how a large language model produces an answer; distinguish general chatbots
+
+00:28.673 --> 00:34.356
+from grounded legal research tools; recognise the built-in limits: training cut-off, inconsistency, sycophancy
+
+00:34.356 --> 00:38.727
+and context limits; explain why agentic AI raises the stakes.
+
+00:40.477 --> 00:44.831
+Welcome to the first module of the Rudra-X AI Practice Assurance programme.
+
+00:45.181 --> 00:48.711
+If you remember only one idea from this course, make it this one.
+
+00:49.060 --> 00:52.230
+A large language model predicts plausible text.
+
+00:52.580 --> 00:54.136
+It does not check facts.
+
+00:54.486 --> 00:58.207
+Everything else we cover, from hallucinated case law to
+
+00:58.207 --> 01:01.928
+the verification protocol, follows from that single design choice.
+
+01:02.278 --> 01:05.138
+So let's look at how these systems actually
+
+01:05.138 --> 01:07.641
+work, in plain language, with no mathematics.
+
+01:09.391 --> 01:12.793
+Here is what happens when you type a question and press enter.
+
+01:13.143 --> 01:16.462
+First, your prompt is broken into tokens, which are
+
+01:16.462 --> 01:19.413
+words and fragments of words converted into numbers.
+
+01:19.763 --> 01:23.722
+Second, the model scores every possible next token, based on patterns
+
+01:23.722 --> 01:27.321
+it learned from an enormous body of text during training.
+
+01:27.671 --> 01:32.017
+Third, it picks a likely token, adds it to the answer, and repeats
+
+01:32.017 --> 01:36.030
+the process, one fragment at a time, until the answer is complete.
+
+01:36.380 --> 01:39.422
+Finally, you read fluent, confident prose.
+
+01:39.772 --> 01:41.977
+Notice what is missing from these steps.
+
+01:42.327 --> 01:45.788
+At no point does a general model open a law report,
+
+01:45.788 --> 01:48.934
+query a court database or check whether a case exists.
+
+01:49.283 --> 01:53.846
+The fluency you see is produced by pattern matching, not by verification.
+
+01:55.596 --> 01:57.674
+This is why hallucinations happen.
+
+01:58.024 --> 02:01.565
+During training the model learned what legal text looks like.
+
+02:01.915 --> 02:05.242
+It learned that a citation has two party names, a
+
+02:05.242 --> 02:08.568
+volume, a reporter, a page, a court and a year.
+
+02:08.918 --> 02:10.636
+It learned how judges write.
+
+02:10.986 --> 02:14.074
+It learned what holdings on a topic usually say.
+
+02:14.424 --> 02:18.452
+So when you ask for authority, it can produce a citation in
+
+02:18.452 --> 02:22.480
+perfect format for a case that never existed, a quotation that sounds
+
+02:22.480 --> 02:26.508
+exactly like a judge but appears in no opinion, and a holding
+
+02:26.508 --> 02:29.529
+that fits your argument, because your question invited one.
+
+02:29.879 --> 02:31.446
+The model is not lying.
+
+02:31.796 --> 02:33.631
+It has no concept of truth.
+
+02:33.981 --> 02:35.478
+It is completing a pattern.
+
+02:35.828 --> 02:38.632
+That is exactly why the output is so
+
+02:38.632 --> 02:41.436
+convincing, and so dangerous when nobody checks it.
+
+02:43.186 --> 02:47.307
+Beyond hallucination, every user should know six built-in limits.
+
+02:47.657 --> 02:49.480
+First, the training cut-off.
+
+02:49.830 --> 02:53.807
+The model's knowledge stops at a date, so later cases, amended
+
+02:53.807 --> 02:57.783
+statutes and new court rules are invisible unless you supply them.
+
+02:58.133 --> 03:00.118
+Second, inconsistency.
+
+03:00.468 --> 03:03.719
+The same prompt can produce a different answer tomorrow.
+
+03:04.069 --> 03:05.660
+Third, sycophancy.
+
+03:06.010 --> 03:08.599
+Models tend to agree with the framing of your
+
+03:08.599 --> 03:11.188
+question, so a leading question gets a leading answer.
+
+03:11.538 --> 03:13.604
+Fourth, context limits.
+
+03:13.954 --> 03:16.398
+When you paste in a long document, parts
+
+03:16.398 --> 03:18.842
+of it may be ignored or summarised unevenly.
+
+03:19.192 --> 03:21.363
+Fifth, arithmetic and dates.
+
+03:21.713 --> 03:24.226
+Counting days to a filing deadline is exactly
+
+03:24.226 --> 03:26.740
+the kind of task these models get wrong.
+
+03:27.090 --> 03:29.551
+And sixth, jurisdiction blur.
+
+03:29.901 --> 03:33.214
+Rules from different states, and from other countries, get
+
+03:33.214 --> 03:36.159
+blended together into a confident but wrong answer.
+
+03:37.909 --> 03:40.777
+Not all AI tools behave the same way.
+
+03:41.127 --> 03:46.081
+A general consumer chatbot answers purely from its training patterns, and the provider's terms
+
+03:46.081 --> 03:50.682
+may allow your inputs to be retained or used to train future models.
+
+03:51.032 --> 03:55.275
+An enterprise-licensed version of the same chatbot usually has much better
+
+03:55.275 --> 03:59.519
+data terms, but it still hallucinates, so it still needs verification.
+
+03:59.869 --> 04:05.627
+Grounded legal research tools use a technique called retrieval augmented generation, or RAG.
+
+04:05.977 --> 04:09.820
+They first retrieve real documents and then write an answer based on them.
+
+04:10.170 --> 04:13.003
+That reduces error, but does not remove it.
+
+04:13.353 --> 04:16.418
+They can still misread a source, cite the wrong page,
+
+04:16.418 --> 04:19.483
+or rely on a case that has since been overturned.
+
+04:19.833 --> 04:23.409
+Then there are AI features embedded inside software you already
+
+04:23.409 --> 04:26.985
+use, where staff may not even realise AI is involved.
+
+04:27.335 --> 04:32.501
+And finally agentic AI, which plans and takes actions across several steps.
+
+04:32.851 --> 04:35.695
+That last category deserves its own slide.
+
+04:37.445 --> 04:39.756
+Agentic AI is the next stage.
+
+04:40.106 --> 04:45.254
+Instead of writing a draft for you to review, an agent can carry out
+
+04:45.254 --> 04:50.403
+actions: sending an email, filing a document, editing a contract in a shared folder,
+
+04:50.403 --> 04:54.816
+or deleting records, across several steps, without a person approving each one.
+
+04:55.166 --> 04:56.594
+Why does that matter?
+
+04:56.944 --> 05:00.287
+Because an error is no longer a draft sitting on your screen.
+
+05:00.637 --> 05:04.701
+It may already have reached a client, a court or the other side.
+
+05:05.051 --> 05:08.418
+The safeguard is simple to state and essential to enforce.
+
+05:08.768 --> 05:12.850
+No agentic tool should file, serve, send, sign, disclose or delete
+
+05:12.850 --> 05:16.933
+anything without prior approval from a reviewing lawyer, and a named
+
+05:16.933 --> 05:21.016
+person must be able to halt or reverse what it does.
+
+05:22.766 --> 05:24.426
+Let's recap the key points.
+
+05:24.776 --> 05:28.364
+AI predicts plausible text; it does not verify it.
+
+05:28.714 --> 05:33.149
+Hallucinations are a design feature of how the model works, not a rare bug.
+
+05:33.499 --> 05:37.342
+Grounded legal tools reduce errors but never eliminate them.
+
+05:37.692 --> 05:41.918
+Agentic AI must never act on the outside world without human approval.
+
+05:43.668 --> 05:44.805
+Knowledge check.
+
+05:45.155 --> 05:49.056
+A general chatbot gives you a case citation in perfect format.
+
+05:49.406 --> 05:51.554
+What does the perfect format tell you?
+
+05:51.904 --> 05:55.886
+Option A: The case exists, because the format is correct.
+
+05:56.236 --> 05:59.626
+Option B: Nothing about whether the case exists.
+
+05:59.976 --> 06:04.260
+Option C: The case exists but may be from another jurisdiction.
+
+06:04.610 --> 06:07.327
+Take a moment to decide before the answer appears.
+
+06:13.077 --> 06:14.691
+The answer is option B.
+
+06:15.041 --> 06:17.851
+Format is exactly what the model learned to imitate.
+
+06:18.201 --> 06:21.266
+Only a primary-source check tells you whether the
+
+06:21.266 --> 06:23.947
+case exists and says what is claimed.

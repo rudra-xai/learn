@@ -1,0 +1,157 @@
+WEBVTT
+
+00:00.600 --> 00:01.947
+Module 8B.
+
+00:02.297 --> 00:05.873
+Evidence readiness: logging, records and legal hold.
+
+00:06.223 --> 00:10.333
+When an AI-related complaint arrives, the firm must be able to show what
+
+00:10.333 --> 00:14.442
+the tool produced, who reviewed it, what was checked and what was sent.
+
+00:14.792 --> 00:18.275
+This module covers the records to keep and how to preserve them.
+
+00:20.025 --> 00:24.529
+By the end of this module you will be able to: know which
+
+00:24.529 --> 00:29.032
+records an AI incident investigation will need; configure tools and systems so the
+
+00:29.032 --> 00:32.843
+records exist; apply a legal hold quickly when a problem arises.
+
+00:34.593 --> 00:40.874
+Imagine a complaint arrives two years from now, alleging that AI-assisted advice was wrong.
+
+00:41.224 --> 00:44.358
+To respond, the firm will need an evidence pack.
+
+00:44.708 --> 00:47.817
+The tool details: the tool, vendor, model and
+
+00:47.817 --> 00:50.537
+version, plan, settings and date of use.
+
+00:50.887 --> 00:54.579
+The prompt and response log, timestamped, as generated.
+
+00:54.929 --> 00:57.548
+Every version: the raw output, each edit, and
+
+00:57.548 --> 00:59.840
+the final version that was relied on.
+
+01:00.190 --> 01:04.729
+The review record: who reviewed, when, which version and what was checked.
+
+01:05.079 --> 01:09.479
+The reliance record: what was filed or sent, to whom and when.
+
+01:09.829 --> 01:13.719
+And the governance in force at the time: the policy, review
+
+01:13.719 --> 01:17.608
+protocol, approved-tool list and the training records of the people involved.
+
+01:17.958 --> 01:20.222
+If any of these are missing, the firm
+
+01:20.222 --> 01:22.486
+may be unable to prove what actually happened.
+
+01:24.236 --> 01:27.870
+These records only exist if the firm sets them up in advance.
+
+01:28.220 --> 01:32.022
+Enable prompt and response logging in every tool that allows it, and
+
+01:32.022 --> 01:35.824
+treat a tool that keeps no logs as unsuitable for client work.
+
+01:36.174 --> 01:41.329
+Disable automatic deletion for AI logs, document versions and review records.
+
+01:41.679 --> 01:46.201
+Set a retention period, at least six years after the matter closes
+
+01:46.201 --> 01:50.723
+is a sensible benchmark, or longer where law or a client requires.
+
+01:51.073 --> 01:53.604
+And test that logs can actually be exported
+
+01:53.604 --> 01:56.135
+in native electronic form before you need them.
+
+01:57.885 --> 02:00.973
+When something goes wrong, act within days.
+
+02:01.323 --> 02:04.372
+The trigger is anyone becoming aware of a complaint, a
+
+02:04.372 --> 02:07.117
+claim, or a circumstance that could lead to one.
+
+02:07.467 --> 02:12.285
+Preserve everything: place AI logs, versions and review records on legal hold,
+
+02:12.285 --> 02:17.103
+a good standard is within five business days, and suspend any deletion.
+
+02:17.453 --> 02:21.423
+Ask the AI vendor in writing to preserve its own logs too.
+
+02:21.773 --> 02:25.280
+And never create or edit a review record after the event.
+
+02:25.630 --> 02:29.809
+A record reconstructed from memory after a complaint carries little weight, and
+
+02:29.809 --> 02:33.641
+altering records can turn a defensible error into a serious problem.
+
+02:35.391 --> 02:37.004
+Let's recap the key points.
+
+02:37.354 --> 02:39.525
+Know the six parts of the evidence pack.
+
+02:39.875 --> 02:44.183
+Enable logging, disable auto-delete, keep records six years or more.
+
+02:44.533 --> 02:48.387
+Legal hold within days; ask the vendor to preserve logs.
+
+02:48.737 --> 02:51.326
+Never reconstruct records after the event.
+
+02:53.076 --> 02:54.249
+Knowledge check.
+
+02:54.599 --> 02:58.453
+A tool your firm uses for client research keeps no prompt logs.
+
+02:58.803 --> 03:00.893
+What's the right governance response?
+
+03:01.243 --> 03:04.668
+Option A: Fine, as long as reviewers are careful.
+
+03:05.018 --> 03:09.673
+Option B: Treat it as unsuitable for client work until logging is available.
+
+03:10.023 --> 03:13.425
+Option C: Ask staff to screenshot occasionally.
+
+03:13.775 --> 03:16.376
+Take a moment to decide before the answer appears.
+
+03:22.126 --> 03:23.844
+The answer is option B.
+
+03:24.194 --> 03:28.443
+Without logs the firm cannot prove what the tool produced or what was reviewed.

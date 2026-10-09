@@ -1,0 +1,94 @@
+name: Deploy portal
+
+# Every push to main is checked and then published to
+# https://rudra-xai.github.io/learn/. Can also be run from the Actions tab.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Check and package portal
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Required files exist
+        run: |
+          for f in index.html module.html handbook.html slides.html assets/js/content.js assets/js/build.js \
+                   assets/js/portal.js assets/css/portal.css assets/vendor/hls.light.min.js \
+                   downloads/RudraX_AI_Desk_Reference.pdf .nojekyll; do
+            [ -f "$f" ] || { echo "::error::Missing $f"; exit 1; }
+          done
+
+      - name: No original course files in the site
+        run: |
+          bad=$(find . -path ./.git -prune -o -type f \( -iname '*.mp4' -o -iname '*.pptx' -o -iname '*.ppt' -o -iname '*.key' \) -print)
+          pdfs=$(find . -path ./.git -prune -o -type f -iname '*.pdf' ! -path './downloads/RudraX_AI_Desk_Reference.pdf' -print)
+          if [ -n "$bad$pdfs" ]; then echo "::error::Only the desk reference may be a downloadable file. Remove: $bad $pdfs"; exit 1; fi
+
+      - name: Every video playlist is complete
+        run: |
+          fail=0
+          for p in media/video/*/index.m3u8; do
+            d=$(dirname "$p")
+            for s in $(grep -v '^#' "$p" | tr -d '\r'); do
+              [ -f "$d/$s" ] || { echo "::error::$p references missing $s"; fail=1; }
+            done
+            [ -s "$d/captions.vtt" ] || echo "::warning::No captions for $d"
+          done
+          exit $fail
+
+      - name: Slide and page images match the catalogue
+        run: |
+          node -e '
+            global.window = {};
+            require("./assets/js/content.js"); require("./assets/js/build.js");
+            const fs = require("fs"), C = window.RX_COURSE, B = window.RX_BUILD, pad = n => String(n).padStart(3, "0");
+            let bad = 0;
+            const need = f => { if (!fs.existsSync(f)) { console.log("::error::Missing " + f); bad = 1; } };
+            for (const m of C.modules) {
+              if (m.insured && !B.insured) continue;
+              need(`media/video/${m.id}/index.m3u8`);
+              for (let n = m.slides.from; n <= m.slides.to; n++) need(`media/slides/${m.slides.deck}/s-${pad(n)}.jpg`);
+              if (m.pages) for (let n = m.pages.from; n <= m.pages.to; n++) need(`media/handbook/p-${pad(n)}.jpg`);
+            }
+            for (let n = 1; n <= B.counts.handbook; n++) need(`media/handbook/p-${pad(n)}.jpg`);
+            process.exit(bad);
+          '
+
+      - name: HTML is well-formed
+        run: npx --yes html-validate@8 --rule 'no-inline-style:off' --rule 'no-raw-characters:off' --rule 'long-title:off' index.html module.html handbook.html slides.html
+
+      - name: Assemble site (skip repo-only files)
+        run: |
+          mkdir _site
+          cp -r index.html module.html handbook.html slides.html assets media downloads .nojekyll _site/
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    name: Publish to GitHub Pages
+    needs: check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
