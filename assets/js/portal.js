@@ -20,6 +20,7 @@
     slides: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8"/></svg>',
     download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
     lock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
+    compass: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>',
     menu: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
   };
 
@@ -193,7 +194,43 @@
           return '<a class="btn" href="slides.html?deck=' + d.id + '">' + esc(d.name) + "</a>";
         }).join("") + "</div></div>" +
       '<div class="res"><span class="ico">' + I.download + "</span><h3>" + esc(C.deskReference.title) + "</h3><p>" + esc(C.deskReference.note) + "</p>" +
-        '<span class="tagline mono">PDF · ' + C.deskReference.size + '</span><div class="actions"><a class="btn primary" href="' + C.deskReference.file + '" download>' + I.download + "Download PDF</a></div></div>";
+        '<span class="tagline mono">PDF · ' + C.deskReference.size + '</span><div class="actions"><a class="btn primary" href="' + C.deskReference.file + '" download>' + I.download + "Download PDF</a></div></div>" +
+      (window.RX && window.RX.enabled ?
+        '<div class="res"><span class="ico">' + I.compass + "</span><h3>" + esc(window.RX_PROFILE.title) + "</h3><p>A short set of practical situations about how you work with AI tools. Takes about " + window.RX_PROFILE.minutes + " minutes; there are no right or wrong answers to look up.</p>" +
+        '<span class="tagline mono">About ' + window.RX_PROFILE.minutes + ' min · once</span><div class="actions"><a class="btn" href="profile.html">Start the profile</a></div></div>' : "");
+
+    if (window.RX && window.RX.enabled) serverProgress(applyTrack);
+  }
+
+  // With the database on: who's learning, which modules are passed or still locked.
+  function serverProgress() {
+    var me = window.RX.me();
+    var bar = $("#who-bar");
+    if (!me) {
+      bar.innerHTML = '<span class="dim">Modules unlock in order and end with a short check. </span><button class="linkbtn" id="who-in">Tell us who you are to start</button>';
+      $("#who-in").onclick = function () { window.RX.identify().then(function () { location.reload(); }, function () {}); };
+      return;
+    }
+    bar.innerHTML = '<span>' + esc(me.name) + " · " + esc(me.firm) + '</span><button class="linkbtn" id="who-out">Not you?</button>';
+    $("#who-out").onclick = function () { window.RX.forget(); location.reload(); };
+    window.RX.call("rx_progress", { p_person: me.person }).then(function (p) {
+      var passed = p.passed || {}, open = true, done = 0;
+      modules.forEach(function (m) {
+        var card = document.querySelector('.module[data-id="' + m.id + '"]'); if (!card) return;
+        var st = card.querySelector(".state");
+        if (passed[m.id]) { done++; st.className = "state done"; st.innerHTML = I.check + "Passed · " + Math.round(passed[m.id].score) + "%"; saveProgress(m.id, 100); }
+        else if (open) { st.className = "state next"; st.textContent = "Up next"; open = false; }
+        else { st.className = "state"; st.innerHTML = I.lock + "Locked"; card.classList.add("locked"); }
+      });
+      var pct = modules.length ? Math.round(100 * done / modules.length) : 0;
+      $("#ring").style.setProperty("--p", pct);
+      $("#ring").innerHTML = "<div><span><strong>" + done + "/" + modules.length + "</strong><small>modules<br>passed</small></span></div>";
+      if (p.profile && p.profile.at) {
+        var b = document.querySelector('a[href="profile.html"]'); if (b) { b.textContent = "Completed"; b.removeAttribute("href"); b.classList.add("done-btn"); }
+      }
+    }, function (e) {
+      if (/Unknown person/.test(e.message)) { window.RX.forget(); location.reload(); }
+    });
   }
 
   function moduleView() {
@@ -204,6 +241,7 @@
       return;
     }
     document.title = m.label + ": " + m.title + " · Rudra-X AI Learning";
+    if (window.RX && window.RX.enabled && window.RXLearn && m.pages) return window.RXLearn.start(m);
     var idx = modules.indexOf(m), prev = modules[idx - 1], next = modules[idx + 1];
     var p = progress()[m.id] || { pct: 0 };
     main.innerHTML =
@@ -295,6 +333,11 @@
     var sel = $("#deck select");
     if (sel) sel.addEventListener("change", function () { ctl.show(+sel.value); });
   }
+
+  window.RXUI = {
+    esc: esc, slideSrc: slideSrc, pageSrc: pageSrc, pagesHtml: pagesHtml, modules: modules, icons: I,
+    markPassed: function (id) { saveProgress(id, 100); }
+  };
 
   shell();
   protect();

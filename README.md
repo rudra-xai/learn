@@ -17,6 +17,21 @@ Right-click, drag, select/copy, Ctrl+S / Ctrl+P / Ctrl+U and printing are blocke
 
 **Honest limits:** without logins, this deters casual copying but can't stop a determined person (screen recording, or tools that grab streamed video and images). Real protection comes with logins and private, per-viewer media (the server-based `RudraX_Learning_Portal_v1` design: signed-in streaming, per-person watermarks, audit log).
 
+## Guided modules and the AI Working Style Profile
+
+Once a database is connected in `assets/js/config.js`, each module becomes a four-step flow, and modules unlock in order:
+
+1. **Watch.** The video can't be skipped ahead on a first attempt. It pauses two or three times for a 25-second question about what was just said.
+2. **Read.** The module's handbook chapter, with at least 20 seconds on screen per page, then one question on a detail from the reading.
+3. **Apply.** A timed hands-on task: sort cases into categories, put steps in order, or spot the problems in an AI draft.
+4. **Check.** Five questions drawn at random from a pool, 45 seconds each, with a confidence rating. Passing needs 4 of 5 and 60% on the task.
+
+`profile.html` is the **AI Working Style Profile**: scenarios, a timed in-tray simulation with a mock firm AI assistant, forced-choice pairs, quick facts with confidence, and habits. Participants see no score.
+
+People identify themselves with name, work email and their firm's code (there are no passwords yet). **Questions, answer keys and scoring live only in the private `rudra-xai/learn-admin` repository and the database.** This repo contains no answers, and the deploy check fails if any appear.
+
+With `config.js` left empty, the portal runs in view-only mode as before.
+
 ## Insured-only content (off by default)
 
 Module 0 (*Your Rudra-X cover and AI*) and the Insured Edition deck are marked "Policyholders only · Do not distribute", so the public build leaves them out. To include them, rebuild with `-IncludeInsured` (see below). They then appear automatically — but **publicly**, until logins exist.
@@ -46,7 +61,12 @@ If slides are added or removed, update the slide and page ranges for each module
 | `handbook.html` | Full handbook reader with contents |
 | `slides.html?deck=market` | Full deck viewer |
 | `assets/js/content.js` | Course catalogue: titles, summaries, tracks, slide/page ranges |
-| `assets/js/portal.js` | All page behaviour |
+| `profile.html` | AI Working Style Profile |
+| `assets/js/portal.js` | Shared page behaviour: home, viewers, header and footer |
+| `assets/js/learn.js` | The guided module flow (Watch, Read, Apply, Check) |
+| `assets/js/profile.js`, `profile-content.js` | The profile: behaviour and questions (no scoring) |
+| `assets/js/api.js`, `config.js` | Database connection and "who are you" sign-in |
+| `assets/css/assess.css` | Styles for tests, tasks and the profile |
 | `assets/js/build.js` | Written by the build script (which optional content exists, counts) |
 | `assets/css/portal.css` | Styles (Rudra-X AI brand) |
 | `assets/vendor/hls.light.min.js` | hls.js 1.7.3, plays the chunked video |

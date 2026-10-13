@@ -25,8 +25,10 @@ jobs:
 
       - name: Required files exist
         run: |
-          for f in index.html module.html handbook.html slides.html assets/js/content.js assets/js/build.js \
-                   assets/js/portal.js assets/css/portal.css assets/vendor/hls.light.min.js \
+          for f in index.html module.html handbook.html slides.html profile.html \
+                   assets/js/content.js assets/js/build.js assets/js/config.js assets/js/api.js \
+                   assets/js/learn.js assets/js/profile.js assets/js/profile-content.js assets/js/portal.js \
+                   assets/css/portal.css assets/css/assess.css assets/vendor/hls.light.min.js \
                    downloads/RudraX_AI_Desk_Reference.pdf .nojekyll; do
             [ -f "$f" ] || { echo "::error::Missing $f"; exit 1; }
           done
@@ -36,6 +38,13 @@ jobs:
           bad=$(find . -path ./.git -prune -o -type f \( -iname '*.mp4' -o -iname '*.pptx' -o -iname '*.ppt' -o -iname '*.key' \) -print)
           pdfs=$(find . -path ./.git -prune -o -type f -iname '*.pdf' ! -path './downloads/RudraX_AI_Desk_Reference.pdf' -print)
           if [ -n "$bad$pdfs" ]; then echo "::error::Only the desk reference may be a downloadable file. Remove: $bad $pdfs"; exit 1; fi
+
+      - name: No answer keys in the public site
+        run: |
+          # question banks and scoring keys live only in the private learn-admin repo
+          if grep -rlE 'careful:|points:|unverified_send|profile-key|modules\.js' --include='*.js' assets; then
+            echo "::error::Answer keys belong in the private learn-admin repo, not here."; exit 1
+          fi
 
       - name: Every video playlist is complete
         run: |
@@ -68,12 +77,12 @@ jobs:
           '
 
       - name: HTML is well-formed
-        run: npx --yes html-validate@8 --rule 'no-inline-style:off' --rule 'no-raw-characters:off' --rule 'long-title:off' index.html module.html handbook.html slides.html
+        run: npx --yes html-validate@8 --rule 'no-inline-style:off' --rule 'no-raw-characters:off' --rule 'long-title:off' index.html module.html handbook.html slides.html profile.html
 
       - name: Assemble site (skip repo-only files)
         run: |
           mkdir _site
-          cp -r index.html module.html handbook.html slides.html assets media downloads .nojekyll _site/
+          cp -r index.html module.html handbook.html slides.html profile.html assets media downloads .nojekyll _site/
 
       - uses: actions/configure-pages@v6
 
