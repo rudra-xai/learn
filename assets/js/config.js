@@ -3,6 +3,6 @@
 // functions, which check every request. Leave url empty to run the portal in
 // view-only mode (no tests, no profile).
 window.RX_API = {
-  url: "",
-  key: ""
+  url: "https://jgthorxqoowodnqinekr.supabase.co",
+  key: "sb_publishable_Fy3YeM_Geg_6TunlJMu7aA_we3XxVTn"
 };
